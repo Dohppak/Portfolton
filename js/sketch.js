@@ -17,8 +17,8 @@ function setup() {
 
 function draw() {
 
-  background(30);
-  fill(255);
+  background(255);
+  fill(0);
 
   for(var i=0;i<systems.length;i++){
     systems[i].show();
@@ -29,7 +29,7 @@ function draw() {
 
       if(distance<200){
         var lineAlpha = map(distance,0,200,255,0);
-        stroke(255,255,255,lineAlpha);
+        stroke(0,0,0,lineAlpha);
         line(systems[i].location.x,systems[i].location.y,systems[j].location.x,systems[j].location.y);
 
       }

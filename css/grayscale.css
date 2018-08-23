@@ -1,12 +1,7 @@
-/*!
- * Start Bootstrap - Grayscale v5.0.1 (https://startbootstrap.com/template-overviews/grayscale)
- * Copyright 2013-2018 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
- */
 
 #mainNav {
   min-height: 56px;
-  background-color: #fff;
+  background-color: black;
 }
 
 #mainNav .navbar-toggler {
@@ -27,7 +22,7 @@
 }
 
 #mainNav .navbar-nav .nav-item:hover {
-  color: fade(white, 80%);
+  color: fade(black, 80%);
   outline: none;
   background-color: transparent;
 }
@@ -47,15 +42,15 @@
   }
   #mainNav .navbar-brand {
     padding: .5rem 0;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.5);
   }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.5);
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(0, 0, 0, 0.75);
   }
   #mainNav .nav-link:active {
     color: white;
@@ -97,14 +92,15 @@
 }
 
 .masthead h1 {
-    color : white;
+    color : rgba(0,0,0,0.87);
+    font-family: FuturaStd-Light;
     font-size: 2.5rem;
     line-height: 2.5rem;
     letter-spacing: -1rem;
 }
 
 .masthead h2 {
-    color : rgba(255,255,255,0.5);
+    color : rgba(0,0,0,0.87);
     max-width: 25rem;
     font-size: 0.8rem;
 }
@@ -115,6 +111,7 @@
 
 @media (min-width: 768px) {
   .masthead h1 {
+
     font-size: 4rem;
     line-height: 4rem;
   }

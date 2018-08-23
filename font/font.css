@@ -1,0 +1,56 @@
+@font-face{
+    font-family: 'Helvetica-ultra-light';
+    src: url('HelveticaNeueLTStd-UltLt.otf') format("opentype");
+}
+@font-face{
+    font-family: "Times-bold-italic";
+    src: url('TimesLTStd-BoldItalic.otf') format("opentype");
+}
+
+@font-face{
+    font-family: 'Helvetica-bold';
+    src: url('HelveticaLTStd-Bd.otf') format("opentype");
+}
+
+@font-face{
+    font-family: 'Helvetica-roman';
+    src: url('HelveticaNeueLTStd-Roman.otf') format("opentype");
+}
+
+@font-face{
+    font-family: 'Helvetica-bold-italic';
+    src: url('HelveticaNeueLTStd-BdIt.otf') format("opentype");
+}
+
+/* 드래그 박스 : 검은 바탕색 + 흰색 글씨 */
+*::selection { color:white; background:#000 !important; }
+*::-moz-selection { color:white; background:#000 !important; } /* firefox */
+
+/* All a tags : hover시 기본적으로는 검정색 underline */
+/* 클래스 no_line a tags 는 underline 나타나지 않음 */
+a:not(.no_line):hover {
+/*
+    background-image: linear-gradient(
+        180deg, rgba(0,0,0,0),
+        rgba(0,0,0,0) 98%,
+        #000 90.1%,
+        #000 100%,
+        rgba(0,0,0,0) 100%,
+        rgba(0,0,0,0)
+    );
+*/
+    text-decoration: none;
+}
+
+/* 클래스 white_line a tags : hover시 흰색 underline */
+a.white_line:hover {
+    background-image: linear-gradient(
+        180deg, rgba(0,0,0,0),
+        rgba(0,0,0,0) 98%,
+        #fff 90.1%,
+        #fff 100%,
+        rgba(0,0,0,0) 100%,
+        rgba(0,0,0,0)
+    );
+    text-decoration: none;
+}
