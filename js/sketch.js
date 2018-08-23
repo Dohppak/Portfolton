@@ -17,13 +17,8 @@ function setup() {
 
 function draw() {
 
-  background(51);
+  background(30);
   fill(255);
-    
-  textSize(20);
-  textFont("myFont");
-  text("Hello, I'm seungheon doh.", 50, 200);
-    
 
   for(var i=0;i<systems.length;i++){
     systems[i].show();
