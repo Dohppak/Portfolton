@@ -1,11 +1,11 @@
-var total =50;
+var total =100;
 var systems;
 var gravity;
 var repeller;
 var canvas;
 
 function setup() {
-    canvas = createCanvas(windowWidth,windowHeight);
+    canvas = createCanvas(windowWidth,windowHeight*2);
     canvas.position(0,0);
     canvas.style('z-index','-1');
     systems = [];
